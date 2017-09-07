@@ -1,0 +1,27 @@
+<link href="https://cdn.bootcss.com/highlight.js/9.12.0/styles/github-gist.min.css" rel="stylesheet">
+<link href="https://cdn.bootcss.com/github-markdown-css/2.8.0/github-markdown.min.css" rel="stylesheet">
+<style>
+  	.markdown-body {
+      box-sizing: border-box;
+      min-width: 200px;
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 45px;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      border-radius: 0.25rem;
+    }
+</style>
+<h2 class="post-title text-center">
+  <%= @post.title  %>
+</h2>
+<p class="post-meta text-center">
+  <%= @post.created_at %>
+</p>
+<div class="markdown-body">
+  <%= sanitize @post.content_html %>
+</div>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+  <%= link_to 'Back', posts_path %>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>

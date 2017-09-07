@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="就是在胡扯">
+    <meta name="author" content="imtinge">
+    <title>就是在胡扯</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+    <link href='http://cdn.webfont.youziku.com/webfonts/nomal/103846/45807/59ad57b1f629d80bf07d57d8.css' rel='stylesheet' type='text/css' />
+  </head>
+  <body>
+    <%= render 'common/navbar' %>
+    <%= render 'common/page_header' %>
+    <div class="container">
+      <%= yield %>
+    </div>
+    <%= render 'common/footer' %>
+  </body>
+</html>

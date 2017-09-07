@@ -1,0 +1,14 @@
+// "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
+@import "bootstrap";
+@import "font-awesome";
+
+@import "clean-blog";
+
+#toolbar {
+    border: 1px solid #ccc;
+}
+
+#editor {
+    border: 1px solid #ccc;
+    height: 500px;
+}
